@@ -29,4 +29,4 @@ User: Authenticated
 
 Design Tool: Figma, Figjam
 
-Server: Python 
+languages and frameworks: Python, django, HTML, CSS, Javascript.
