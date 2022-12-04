@@ -19,7 +19,7 @@ cc-gen
 ## Resource
 * [Product Documentation](https://docs.google.com/document/d/15_CW3yIrWMxepYVp_7WHOLzd5md7q2thjMBgyGg_PrE/edit?usp=sharing)
 * [Figma](https://www.figma.com/file/vHvm0LLeEOO2wDEw9tMcG7/Team-Humanw2-CC_gen?node-id=0%3A1&t=z3IEJkfp8tAnV9JV-1)
-* [Database Schema](https://www.figma.com)
+* [Database Schema](https://bit.ly/3umgFTd)
 
 ## Website Features
 
