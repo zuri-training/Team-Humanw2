@@ -17,8 +17,8 @@ cc-gen
     A library of different types of credit card designs
 
 ## Resource
-* [Product Documentation](https://docs.google.com/document/d/1nOgtowfg9rb_7a58rMgRlU8niTpyijAHCi4GahPir8I/edit?usp=sharing)
-* [Figma](https://www.figma.com/file/vHvm0LLeEOO2wDEw9tMcG7/Team-Humanw2-Style-Guide?node-id=0%3A1&t=Qi6gRNde4vRXP4Ex-1)
+* [Product Documentation](https://docs.google.com/document/d/15_CW3yIrWMxepYVp_7WHOLzd5md7q2thjMBgyGg_PrE/edit?usp=sharing)
+* [Figma](https://www.figma.com/file/vHvm0LLeEOO2wDEw9tMcG7/Team-Humanw2-CC_gen?node-id=0%3A1&t=z3IEJkfp8tAnV9JV-1)
 * [Database Schema](https://www.figma.com)
 
 ## Website Features
