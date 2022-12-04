@@ -50,7 +50,7 @@ Authenticated Users;
  _ongoing_
  
 ## Collaboration Guide
-For TeamQuail members, follow the following steps to collaborate:
+For Team Humanw2 members, follow the following steps to collaborate:
 1. Visit the Repository to the Project on Github Website: "https://github.com/zuri-training/Team-Humanw2.git" <br/>
 2. Fork the repository: Click the "Fork" button on the upper right corner of the Repo page.* <br/>
 3. Make a local clone: 
