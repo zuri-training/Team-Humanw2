@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --orange: #F79F1A;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* header style starts here */
+
+header {
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 .5rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+nav li a:hover {
+    color: #D18131;
+}
+
+.cta {
+    display: flex;
+    gap: 16px;
+}
+
+.cta button {
+    font-size: 16px;
+    font-weight: 500;
+    background: none;
+    text-align: center;
+    padding: 10px 20px;
+    color: var(--orange);
+    line-height: 19px;
+    border: 1px solid #F8AF40;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button.login:hover {
+    background: var(--orange);
+    color: #FFF;
+}
+
+button.register {
+    background-color: var(--orange);
+    color: #FFF;
+}
+
+button.register:hover {
+    background: none;
+    color: var(--orange);
+}
+
+/* header style ends here */
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: -0.023em;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
