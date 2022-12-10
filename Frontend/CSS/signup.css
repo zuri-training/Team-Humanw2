@@ -15,10 +15,11 @@
 
 header {
     width: 100%;
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 5;
 }
 
 nav li {
@@ -73,11 +74,170 @@ button.register:hover {
 
 /* header style ends here */
 
-h1 {
-    font-size: 3rem;
-    letter-spacing: -0.023em;
+/* general styles starts here */
+a {
+    text-decoration: none;
+}
+
+
+/* general styles ends here */
+
+/* main style starts here */
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+}
+
+.content {
+    height: 47;
+    width: 31rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.head {
+    height: 3.5rem;
+    width: 31rem;
+    padding: auto 0;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 1px 2.5px lightgray;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.2rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: .5rem;
+}
+
+.form-field {
+    height: 3.2rem;
+    width: 26rem;
+    position: relative;
+    padding: .4rem 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.form-field i {
+    position: absolute;
+    top: 45%;
+    right: 2%;
+}
+
+.form-field label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: block;
+}
+
+.form-field input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.sign-up {
+    height: 3rem;
+    padding: 0;
+    border: none;
+}
+
+.form-field input[type="submit"] {
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+    color: #FFF;
+    background: var(--orange);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.break {
+    width: 26rem;
+}
+
+.break p {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+}
+  
+.break p:before {
+    content:" ";
+    height: 2px;
+    width: 40%;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+  
+.break p:after {
+    content:" ";
+    height: 2px;
+    width: 40%;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.social-field {
+    height: 3rem;
+    width: 26rem;
+    padding: .1 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.social-field  i{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
+.social-field a {
+    color: #000;
+    text-decoration: none;
+}
+
+.question a{
+    color: red;
+}
+
+.sign-up-image {
+    margin-top: 5rem;
 }

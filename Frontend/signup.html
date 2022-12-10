@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="./CSS/signup.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
 
@@ -34,16 +35,63 @@
 
     <!-- main section starts here -->
     <main>
+
         <div class="content">
-            <h1>You're Welcome</h1>
-            <h2>Sign Up!</h2>
+            <div class="head">
+                <h2>Sign Up</h2>
+            </div>
+
             <form action="" method="post">
+
                 <div class="form-field">
-                    
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email" name="email" id="email">
+                    <i class="fa fa-envelope icon"></i>
                 </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" name="password" id="password">
+                    <i class="fa fa-lock icon"></i>
+                </div>
+                <div class="form-field">
+                    <label for="c-password">Confirm Password</label>
+                    <input type="c-password" placeholder="confirm your password" name="c-password" id="c-password">
+                    <i class="fa fa-eye icon"></i>
+                </div>
+
+                <p> <input type="checkbox" name="" id="terms">
+                    I agree with the terms & conditions
+                </p>
+
+                <div class="form-field sign-up">
+                    <input type="submit" value="Sign Up" id="submit">
+                </div>
+
             </form>
+
+            <div class="break">
+                <p>Or</p>
+            </div>
+
+            <div class="socials">
+                <div class="social-field">
+                    <i class="fas fa-google icon fa"></i>
+                    <a href="#">Sign Up with Google</a>
+                </div>
+                <div class="social-field">
+                    <i class="fas fa-facebook icon fa"></i>
+                    <a href="#">Sign Up with Facebook</a>
+                </div>
+                <div class="social-field">
+                    <i class="fas fa-apple icon fa"></i>
+                    <a href="#">Sign Up with Apple Id</a>
+                </div>
+            </div>
+            <p class="question">Already have an account? <a href="">Sign in</a></p>
         </div>
-        <div class="image"></div>
+        <div class="sign-up-image">
+            <img src="./Images/signUp-image.svg" alt="">
+        </div>
     </main>
 </body>
 </html>
