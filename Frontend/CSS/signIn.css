@@ -92,7 +92,7 @@ a {
 main {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 }
 
 .content {
@@ -109,6 +109,9 @@ main {
     height: 3.5rem;
     width: 31rem;
     padding: auto 0;
+    padding-left: 25%;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     vertical-align: middle;
     box-shadow: 0 1px 2.5px lightgray;
@@ -120,11 +123,17 @@ h2 {
     margin: 1.2rem 0;
 }
 
+.head button {
+    margin-right: -2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     gap: .5rem;
 }
 
@@ -137,6 +146,7 @@ form {
 }
 
 .form-field label {
+    color: #555;
     font-size: 0.75rem;
     font-weight: 500;
     display: block;
@@ -148,12 +158,24 @@ form {
     border: none;
 }
 
-input:focus {
+.form-field input:focus {
     outline: none;
     border-bottom: 1px solid #000;
 }
 
-.sign-up {
+form .flex p {
+    color: #555;
+}
+
+form .flex a{
+    color: red;
+}
+
+form .flex a:hover{
+    color: darkred;
+}
+
+.sign-in {
     height: 3rem;
     padding: 0;
     border: none;
@@ -229,8 +251,4 @@ input:focus {
 
 .question a:hover{
     color: darkred;
-}
-
-.sign-up-image {
-    margin-top: 5rem;
 }

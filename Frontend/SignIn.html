@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up | CC GEN</title>
-    <link rel="stylesheet" href="./CSS/signup.css">
+    <title>Sign In | CC GEN</title>
+    <link rel="stylesheet" href="./CSS/signIn.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
@@ -39,6 +39,7 @@
         <div class="content">
             <div class="head">
                 <h2>Sign Up</h2>
+                <button type="cancel" class="btn-close" value="X" onclick="javascript:window.location='./index.html';">X</button>
             </div>
 
             <form action="" method="post">
@@ -57,20 +58,18 @@
                         <i class="fa fa-lock icon"></i>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="c-password">Confirm Password</label>
-                    <div class="flex">
-                        <input type="c-password" placeholder="confirm your password" name="c-password" id="c-password" required>
-                        <i class="fa fa-check-circle"></i>
-                    </div>
+
+                <div class="flex">
+                    <p> <input type="checkbox" name="" id="terms">
+                        Remember me
+                    </p>
+                    <a href="">
+                        Forgot password
+                    </a>
                 </div>
 
-                <p> <input type="checkbox" name="" id="terms">
-                    I agree with the terms & conditions
-                </p>
-
-                <div class="form-field sign-up">
-                    <input type="submit" value="Sign Up" id="submit">
+                <div class="form-field sign-in">
+                    <input type="submit" value="Sign In" id="submit">
                 </div>
 
             </form>
@@ -82,24 +81,21 @@
             <div class="socials">
                 <div class="social-field flex">
                     <i class="fas fa-google icon fa"></i>
-                    <a href="#">Sign Up with Google</a>
+                    <a href="#">Sign In with Google</a>
                     <p></p>
                 </div>
                 <div class="social-field flex">
                     <i class="fas fa-facebook icon fa"></i>
-                    <a href="#">Sign Up with Facebook</a>
+                    <a href="#">Sign In with Facebook</a>
                     <p></p>
                 </div>
                 <div class="social-field flex">
                     <i class="fas fa-apple icon fa"></i>
-                    <a href="#">Sign Up with Apple Id</a>
+                    <a href="#">Sign In with Apple Id</a>
                     <p></p>
                 </div>
             </div>
-            <p class="question">Already have an account? <a href="./SignIn.html">Sign in</a></p>
-        </div>
-        <div class="sign-up-image">
-            <img src="./Images/signUp-image.svg" alt="">
+            <p class="question">Don't have an account? <a href="./signup.html">Sign In</a></p>
         </div>
     </main>
 </body>
