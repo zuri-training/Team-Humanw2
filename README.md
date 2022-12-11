@@ -20,7 +20,27 @@ cc-gen
 * [Product Documentation](https://docs.google.com/document/d/15_CW3yIrWMxepYVp_7WHOLzd5md7q2thjMBgyGg_PrE/edit?usp=sharing)
 * [Figma](https://www.figma.com/file/vHvm0LLeEOO2wDEw9tMcG7/Team-Humanw2-CC_gen?node-id=0%3A1&t=z3IEJkfp8tAnV9JV-1)
 * [Database Schema](https://bit.ly/3umgFTd)
-
+## Usage: install python, and django
+```sh
+git clone https://github.com/zuri-training/Team-Human
+w2.git
+```
+then
+```sh
+pip install -r requirements.txt
+```
+go into the directory with manage.py (ccgen) run
+```sh
+python manage.py runserver
+```
+visit
+```sh
+http://127.0.0.1:8000
+```
+for the admin page username:zuri, password: zuri, visit
+```sh
+http://127.0.0.1:8000/admin
+```
 ## Website Features
 
 Unauthenticated Users;
