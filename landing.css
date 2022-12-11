@@ -31,7 +31,7 @@
 }
 
 .logo{
-    width: 65px;
+    width: 120px;
     cursor: pointer;
 }
 
@@ -265,6 +265,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
+    font-size: 11px;
    }
 
     .card_design .card_text .btn{
@@ -354,16 +356,16 @@ margin-left: 100px;
    .about_us h4{
     font-size: 20px;
     margin-left: 120px;
+    text-align: center;
    }
 
    .about_us p{
     color: black;
-    padding-left: 50px;
     font-size: 15px;
-    max-width: 50%;
+    max-width: 80%;
     line-height: 25px;
-    margin-left: 70px;
     margin-bottom: 80px;
+    text-align: center;
    }
 
 
@@ -444,3 +446,21 @@ line-height: 45px;
     color: white;
     cursor: pointer;
 }
+
+.social_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    background-color: #523509;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.social_icons a{
+    text-decoration: none;
+    color: white;
+}
+
