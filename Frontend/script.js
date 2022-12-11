@@ -1,16 +1,19 @@
-const mainContent = document.querySelector(".main-content");
-const closeModal = document.querySelector(".btn-close")
-const forgotPasswordBtn = document.querySelector(".forgot-btn");
-const forgotPasswordModal = document.querySelector(".forgot-modal");
-const forgotPasswordForm = document.querySelector(".forgot-form");
-const backToSignin = document.querySelector(".to-signin");
+const forgotPasswordModal = document.querySelector(".forgot-modal"),
+forgotPasswordForm = document.querySelector(".forgot-form");
 
-forgotPasswordBtn.addEventListener("click", function(){
-    forgotPasswordModal.style.display = "flex";
-    mainContent.style.display = "none";
-})
+// This function get the user mail then add it to the login verify modal
 
-backToSignin.addEventListener('click', () => {
+function showUserEmail() {
+    let userEmail = document.querySelector(".recover").value;
+    console.log(userEmail)
+    document.querySelector('.user.mail').write("my message");
+}
+
+// This function displays the login verify modal after the user has submitted the form
+
+forgotPasswordForm.addEventListener('submit', () => {
+    event.preventDefault();
+    document.querySelector('.login-verify-modal').style.display = "flex";
     forgotPasswordModal.style.display = "none";
-    mainContent.style.display = "flex";
+    showUserEmail;
 })

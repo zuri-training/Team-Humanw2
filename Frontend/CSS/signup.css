@@ -112,7 +112,9 @@ main {
 .head {
     height: 3.5rem;
     width: 31rem;
-    padding: auto 0;
+    padding-left: 25%;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     vertical-align: middle;
     box-shadow: 0 1px 2.5px lightgray;
@@ -122,6 +124,13 @@ h2 {
     font-size: 1.2rem;
     font-weight: 400;
     margin: 1.2rem 0;
+}
+
+.head button {
+    margin-right: -2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 form {

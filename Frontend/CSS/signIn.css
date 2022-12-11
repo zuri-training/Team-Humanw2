@@ -171,10 +171,8 @@ form .flex p {
     color: #555;
 }
 
-form .flex .forgot-btn {
+form .flex .forgot-btn{
     color: red;
-    background: none;
-    border: none;
     cursor: pointer;
 }
 
@@ -182,14 +180,16 @@ form .flex .forgot-btn:hover{
     color: darkred;
 }
 
-.sign-in {
+.sign-in,
+.recover {
     height: 3rem;
     padding: 0;
     border: none;
 }
 
 .form-field input[type="submit"],
-.form-field button[type="submit"] {
+.form-field button[type="submit"],
+#open-email {
     height: 100%;
     width: 100%;
     font-size: 16px;
@@ -263,9 +263,10 @@ form .flex .forgot-btn:hover{
     color: darkred;
 }
 
-/* forgot modal starts here */
+/* modal styles starts here */
 
-.forgot-modal {
+.forgot-modal,
+.login-verify-modal {
     height: 47;
     width: 31rem;
     display: none;
@@ -275,14 +276,26 @@ form .flex .forgot-btn:hover{
     gap: 1.5rem;
 }
 
-.forgot-modal .head{
+.forgot-modal {
+    display: flex;
+}
+
+.forgot-modal .head,
+.login-verify-modal .head {
     padding-left: 0;
 }
 
-.forgot-modal .text-area p {
+.text-area p {
     margin: 0;
     font-size: 24px;
     font-weight: 400;
+    text-align: center;
+}
+
+.additional-text-area {
+    color: #444;
+    font-size: 15px;
+    word-spacing: -2px;
     text-align: center;
 }
 
@@ -292,4 +305,8 @@ form .flex .forgot-btn:hover{
 
 .hidden {
     display: none;
+}
+
+.login-verify .sign-in {
+    margin-top: 1.5rem;
 }
