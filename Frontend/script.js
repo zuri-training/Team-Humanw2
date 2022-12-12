@@ -4,16 +4,16 @@ forgotPasswordForm = document.querySelector(".forgot-form");
 // This function get the user mail then add it to the login verify modal
 
 function showUserEmail() {
-    let userEmail = document.querySelector(".recover").value;
-    console.log(userEmail)
-    document.querySelector('.user.mail').write("my message");
+    let userEmail = document.querySelector("#recovery-email").value;
+    document.querySelector('.user-mail').innerText = userEmail;
 }
 
 // This function displays the login verify modal after the user has submitted the form
 
-forgotPasswordForm.addEventListener('submit', () => {
+forgotPasswordForm.addEventListener('submit', (event) => {
     event.preventDefault();
     document.querySelector('.login-verify-modal').style.display = "flex";
     forgotPasswordModal.style.display = "none";
-    showUserEmail;
+
+    showUserEmail();
 })
