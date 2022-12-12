@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Big Shoulders Display', cursive;
     font-family: 'Inter', sans-serif;
-    font-family: 'Lexend Deca', sans-serif;
 }
 
 /* styling the nav bar  */
@@ -180,6 +178,13 @@ p{
     cursor: pointer;
 } 
 
+.box1 a,
+.box2 a,
+.box3 a{
+    text-decoration: none;
+    color: black;
+}
+
 .section_two h2{
     display: flex;
     text-align: center;
@@ -189,6 +194,8 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
    }
+
+
 
    /* styling customize your card section  */
 
@@ -225,12 +232,12 @@ p{
 
    .card_text h5{
     color: black;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 15px;
     letter-spacing: 2px;
     width: 482px;
     font-weight: 600;
-    line-height: 42px;
+    line-height: 35px;
     margin-left: 50px;
    }
 
@@ -239,8 +246,8 @@ p{
     width: 484px;
     height: 100px;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 150%;
+    font-size: 18px;
+    line-height: 140%;
     margin-left: 50px;
    }
 
@@ -288,7 +295,7 @@ color: black;
     width: 484px;
     height: 100px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 150%;
     margin-left: 100px;
     margin-right: 50px;
@@ -317,7 +324,7 @@ color: black;
    /* styling the testimonial section */
 
    #testimonials{
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 95px;
     margin-top: 50px;
    }
@@ -329,43 +336,48 @@ color: black;
 }
 
 .container_text img{
-width: 150px;
+width: 160px;
 display: flex;
-justify-content: center;
 align-items: center;
 margin-left: 100px;
 }
 
-.container_text h4{
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    margin-right: 33px;
-    margin-top: 15px;
+#Helen{
+    margin-left: 100px;
 }
+
+.container_text h4{
+font-size: 15px;
+text-align: center;
+margin-top: 15px;
+margin-left: 60px;
+}
+
 .container_text p{
     color: #000000;
-    font-size: 15px;
-    line-height: 15px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 17px;
     margin-bottom: 90px;
-    width: 250px;
     margin-top: 15px;
 }
 
 /* styling about us section */
    .about_us h4{
     font-size: 20px;
-    margin-left: 120px;
+   text-align: center;
     text-align: center;
    }
 
    .about_us p{
     color: black;
     font-size: 15px;
-    max-width: 80%;
+    /* max-width: 70%; */
     line-height: 25px;
     margin-bottom: 80px;
     text-align: center;
+    max-width: 80%;
+
    }
 
 
@@ -427,28 +439,31 @@ margin-left: 100px;
 
 
 /* styling the footer section */
-.footer{
+.footer {
     display: flex;
+    position: relative;
+    /* top: 1700px; */
     justify-content: center;
     align-items: center;
     flex-direction: row;
     margin-top: 40px;
     padding: 12px 20px;
     gap: 150px;
-background-color: #523509;
-color: white;
-font-size: 13px;
-line-height: 45px;
+    background-color: #523509;
+    color: white;
+    font-size: 13px;
+    line-height: 45px;
 }
 
-.column1 a{
+.column1 a {
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
 
-.social_icons{
+.social_icons {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     gap: 35px;
@@ -459,8 +474,12 @@ line-height: 45px;
 }
 
 
-.social_icons a{
+.social_icons a {
     text-decoration: none;
     color: white;
+}
+
+.social_icons a:hover {
+    color: rgb(255, 187, 0);
 }
 
