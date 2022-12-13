@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* styling the nav bar  */
+
+.container{
+    width: 100%;
+    /* height: 50px; */
+    background-color: #523509;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 8%;
+
+}
+
+.navbar{
+    /* height: 12%; */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 1218px;
+    height: 53px;
+    left: 52px;
+    top: 31px;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: #F79F1A;
+    transition: .4s;
+}
+
+.navbar button {
+    border: none;
+    background: #F79F1A;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+.navbar .login {
+    background-color: transparent;
+    border: 1px solid orange;
+    padding: 8px 20px;
+    margin-right: 10px;
+}
+
+
+.navbar button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* styling the section after nav bar  */
+
+.row{
+display: flex;
+height: 30%;
+align-items: center;
+background-color: #523509;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color: #fff;
+    font-size: 45px;
+    margin-left: 100px;
+}
+
+p{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 15px;
+    margin-left: 100px;
+}
+
+.col button{
+    width: 180px;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 0;
+    background: #F79F1A;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 30px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.col button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: white;
+    background-color: #a0660f;
+}
+
+.col img {
+    height: 47%;
+    width: 430px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+/* styling section tagged "browse our best cards categories" */
+.card{
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1, .box2, .box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 70px;
+    background: #FDECD1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    gap: 60px;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    transition: .3s ease-in-out;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+    background-color: #ebbd77;
+    cursor: pointer;
+} 
+
+.box1 a,
+.box2 a,
+.box3 a{
+    text-decoration: none;
+    color: black;
+}
+
+.section_two h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+
+
+
+   /* styling customize your card section  */
+
+    .card1{
+    margin-top: 60px;
+   }
+
+   .card2 {
+       margin-top: 40px;
+   }
+
+   .card1 .card2{
+    width: 100%;
+    padding: 78px 0px;
+   }
+
+   .card1 img, .card2 img{
+    height: auto;
+    width: 550px;
+   }
+
+   .card_text{
+    width: 550px;
+   }
+
+   .card_design{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   }
+
+   .card_text h5{
+    color: black;
+    font-size: 28px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    width: 482px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-left: 50px;
+   }
+
+   .card_text p{
+    color: black;
+    width: 484px;
+    height: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    margin-left: 50px;
+   }
+
+   .card_text button{
+    background: #F79F1A;
+    border-radius: 5px;
+    padding: 12px 20px;
+    width: 200px;
+    height: 45px;
+    margin-left: 50px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+   }
+
+   .card_design .card_text button:hover {
+    background: #66420b;
+   }
+
+   span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 11px;
+   }
+
+    .card_design .card_text .btn{
+    font-size: 15px;
+   }
+
+
+   /* styling benefits section */
+
+.Benefits{
+    margin-top: 90px;
+    display: flex;
+    background: #faf5ee;
+    /* opacity: 0.1; */
+    border: 0.1px solid #000000;
+}
+   .Benefits p{
+color: black;
+    width: 484px;
+    height: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding: 10px;
+    margin-top: 50px;
+    
+   }
+   #verticle-line{
+    margin-top: 80px;
+    width: 0.4px;
+    height: 350px;
+    background-color: black;
+   }
+
+   .Benefits h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+   }
+
+   .benefits2{
+    margin-top: 35px;
+   }
+
+
+   /* styling the testimonial section */
+
+   #testimonials{
+    font-size: 18px;
+    margin-left: 95px;
+    margin-top: 50px;
+   }
+.testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 35px;
+}
+
+.container_text img{
+width: 160px;
+display: flex;
+align-items: center;
+margin-left: 100px;
+}
+
+#Helen{
+    margin-left: 100px;
+}
+
+.container_text h4{
+font-size: 15px;
+text-align: center;
+margin-top: 15px;
+margin-left: 60px;
+}
+
+.container_text p{
+    color: #000000;
+    text-align: center;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 90px;
+    margin-top: 15px;
+}
+
+/* styling about us section */
+   .about_us h4{
+    font-size: 20px;
+   text-align: center;
+    text-align: center;
+   }
+
+   .about_us p{
+    color: black;
+    font-size: 15px;
+    /* max-width: 70%; */
+    line-height: 25px;
+    margin-bottom: 80px;
+    text-align: center;
+    max-width: 80%;
+
+   }
+
+
+   /* styling join our mailing list section */
+   .mailing_list{
+    background-color: #523509;
+   height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   }
+
+   .mailing_list input{
+    padding: 15px;
+    width: 300px;
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+    color: white;
+  margin-left: 70px;
+  margin-top: 25px;
+   }
+
+.form_list{
+    display: flex;
+   margin-top: 50px;
+    
+}
+
+.mailing_list input:focus{
+    background-color: transparent;
+    color: white;
+}
+
+.mailing_list h4{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.mailing_list button{
+    margin-top: 50px;
+    padding: 15px 50px;
+    background-color: #F79F1A;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mailing_list button:hover{
+    background-color: #a0660f;
+    color: white;
+    outline: none;
+}
+
+
+/* styling the footer section */
+.footer {
+    display: flex;
+    position: relative;
+    /* top: 1700px; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 12px 20px;
+    gap: 150px;
+    background-color: #523509;
+    color: white;
+    font-size: 13px;
+    line-height: 45px;
+}
+
+.column1 a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.social_icons {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    background-color: #523509;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.social_icons a {
+    text-decoration: none;
+    color: white;
+}
+
+.social_icons a:hover {
+    color: rgb(255, 187, 0);
+}
+

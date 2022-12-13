@@ -15,11 +15,11 @@
 
     <header>
        <a href="#">
-        <img src="./Images/Logo.svg" alt="CC_gen" id="logo"></a>
+        <img src="./Images/Carts logo.png" alt="CC_gen" id="logo"></a>
         <nav>
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#Cards">Cards</a></li>
+            <li><a href="./cardlibrary.html">Cards</a></li>
             <li><a href="#Benefits">Benefits</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="./contact.html">Contact</a></li>
@@ -33,28 +33,28 @@
 
     <!-- header section ends here -->
 
-    <!-- main section starts here -->
     <main>
+        <!-- main section starts here -->
 
-        <div class="content">
+        <div class="main-content">
             <div class="head">
                 <h2>Sign In</h2>
-                <button type="cancel" class="btn-close" value="X" onclick="javascript:window.location='./index.html';">X</button>
+                <button type="cancel" class="btn-close" value="X" onclick="javascript:window.history.back()">X</button>
             </div>
 
-            <form action="" method="post">
+            <form action="" method="post" id="login-form">
 
                 <div class="form-field">
                     <label for="email">Email</label>
                     <div class="flex">
-                        <input type="email" placeholder="Enter your email" name="email" id="email" required>
+                        <input type="email" placeholder="Enter your email" name="login-email" id="login-email" required>
                         <i class="fa fa-envelope icon"></i>
                     </div>
                 </div>
                 <div class="form-field">
                     <label for="password">Password</label>
                     <div class="flex">
-                        <input type="password" placeholder="Enter your password" name="password" id="password" required>
+                        <input type="password" placeholder="Enter your password" name="login-password" id="login-password" required>
                         <i class="fa fa-lock icon"></i>
                     </div>
                 </div>
@@ -63,13 +63,12 @@
                     <p> <input type="checkbox" name="" id="terms">
                         Remember me
                     </p>
-                    <a href="">
-                        Forgot password
-                    </a>
+                    <a href="./forgotpassword.html" class="forgot-btn">Forgot Password</a>
                 </div>
 
                 <div class="form-field sign-in">
-                    <input type="submit" value="Sign In" id="submit">
+                    <button type="submit" id="login-submit">Sign In</button>
+                    <!-- <input type="submit" value="Sign In" id="submit"> -->
                 </div>
 
             </form>
@@ -97,6 +96,10 @@
             </div>
             <p class="question">Don't have an account? <a href="./signup.html">Sign In</a></p>
         </div>
+
+        <!-- main section ends here -->
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>

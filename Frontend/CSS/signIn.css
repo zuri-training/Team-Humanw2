@@ -22,6 +22,10 @@ header {
     z-index: 5;
 }
 
+#logo{
+    width: 100px;
+}
+
 nav li {
     display: inline;
     margin: 0 .5rem;
@@ -87,7 +91,7 @@ a {
 
 /* general styles ends here */
 
-/* main style starts here */
+/* main content style starts here */
 
 main {
     display: flex;
@@ -95,7 +99,7 @@ main {
     padding-bottom: 3rem;
 }
 
-.content {
+.main-content {
     height: 47;
     width: 31rem;
     display: flex;
@@ -103,12 +107,12 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    /* display: none; */
 }
 
 .head {
     height: 3.5rem;
     width: 31rem;
-    padding: auto 0;
     padding-left: 25%;
     display: flex;
     justify-content: space-around;
@@ -167,26 +171,32 @@ form .flex p {
     color: #555;
 }
 
-form .flex a{
+form .flex .forgot-btn{
     color: red;
+    cursor: pointer;
 }
 
-form .flex a:hover{
+form .flex .forgot-btn:hover{
     color: darkred;
 }
 
-.sign-in {
+.sign-in,
+.recover {
     height: 3rem;
     padding: 0;
     border: none;
 }
 
-.form-field input[type="submit"] {
+.form-field input[type="submit"],
+.form-field button[type="submit"],
+#open-email {
     height: 100%;
     width: 100%;
+    font-size: 16px;
     font-weight: 700;
     color: #FFF;
     background: var(--orange);
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -251,4 +261,52 @@ form .flex a:hover{
 
 .question a:hover{
     color: darkred;
+}
+
+/* modal styles starts here */
+
+.forgot-modal,
+.login-verify-modal {
+    height: 47;
+    width: 31rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.forgot-modal {
+    display: flex;
+}
+
+.forgot-modal .head,
+.login-verify-modal .head {
+    padding-left: 0;
+}
+
+.text-area p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.additional-text-area {
+    color: #444;
+    font-size: 15px;
+    word-spacing: -2px;
+    text-align: center;
+}
+
+.forgot-modal form {
+    gap: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.login-verify .sign-in {
+    margin-top: 1.5rem;
 }
