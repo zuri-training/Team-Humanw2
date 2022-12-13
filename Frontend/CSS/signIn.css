@@ -22,6 +22,10 @@ header {
     z-index: 5;
 }
 
+#logo{
+    width: 100px;
+}
+
 nav li {
     display: inline;
     margin: 0 .5rem;
@@ -167,10 +171,15 @@ form .flex p {
     color: #555;
 }
 
+<<<<<<< HEAD
 form .flex .forgot-btn {
     color: red;
     background: none;
     border: none;
+=======
+form .flex .forgot-btn{
+    color: red;
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
     cursor: pointer;
 }
 
@@ -178,14 +187,20 @@ form .flex .forgot-btn:hover{
     color: darkred;
 }
 
-.sign-in {
+.sign-in,
+.recover {
     height: 3rem;
     padding: 0;
     border: none;
 }
 
 .form-field input[type="submit"],
+<<<<<<< HEAD
 .form-field button[type="submit"] {
+=======
+.form-field button[type="submit"],
+#open-email {
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
     height: 100%;
     width: 100%;
     font-size: 16px;
@@ -259,9 +274,16 @@ form .flex .forgot-btn:hover{
     color: darkred;
 }
 
+<<<<<<< HEAD
 /* forgot modal starts here */
 
 .forgot-modal {
+=======
+/* modal styles starts here */
+
+.forgot-modal,
+.login-verify-modal {
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
     height: 47;
     width: 31rem;
     display: none;
@@ -271,21 +293,51 @@ form .flex .forgot-btn:hover{
     gap: 1.5rem;
 }
 
+<<<<<<< HEAD
 .forgot-modal .head{
     padding-left: 0;
 }
 
 .forgot-modal .text-area p {
+=======
+.forgot-modal {
+    display: flex;
+}
+
+.forgot-modal .head,
+.login-verify-modal .head {
+    padding-left: 0;
+}
+
+.text-area p {
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
     margin: 0;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+.additional-text-area {
+    color: #444;
+    font-size: 15px;
+    word-spacing: -2px;
+    text-align: center;
+}
+
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
 .forgot-modal form {
     gap: 2rem;
 }
 
 .hidden {
     display: none;
+<<<<<<< HEAD
+=======
+}
+
+.login-verify .sign-in {
+    margin-top: 1.5rem;
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
 }
