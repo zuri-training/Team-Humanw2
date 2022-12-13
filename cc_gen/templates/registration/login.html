@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'ccgen/base.html' %}
 {% block content %}
     {% if form.errors %}
         <p> your username and password didn't match. please retry</p>
@@ -29,4 +29,5 @@
             </form>
             {# assume you setup the password_reset view in the urlconf #}    
             <p><a href="{% url 'password_reset' %}">lost password</a></p>
-{% endblock %}
+<p><a href="{% url 'ccgen:usersignup' %}">sign up</a></p>
+	    {% endblock %}
