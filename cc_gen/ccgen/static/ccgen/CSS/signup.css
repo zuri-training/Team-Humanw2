@@ -22,6 +22,10 @@ header {
     z-index: 5;
 }
 
+#logo{
+    width: 100px;
+}
+
 nav li {
     display: inline;
     margin: 0 .5rem;
@@ -92,7 +96,7 @@ a {
 main {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 
 .content {
@@ -108,7 +112,6 @@ main {
 .head {
     height: 3.5rem;
     width: 31rem;
-    padding: auto 0;
     padding-left: 25%;
     display: flex;
     justify-content: space-around;
@@ -134,6 +137,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
     gap: .5rem;
 }
 
@@ -146,7 +150,6 @@ form {
 }
 
 .form-field label {
-    color: #000;
     font-size: 0.75rem;
     font-weight: 500;
     display: block;
@@ -158,24 +161,12 @@ form {
     border: none;
 }
 
-.form-field input:focus {
+input:focus {
     outline: none;
     border-bottom: 1px solid #000;
 }
 
-form .flex p {
-    color: #555;
-}
-
-form .flex a{
-    color: red;
-}
-
-form .flex a:hover{
-    color: darkred;
-}
-
-.sign-in {
+.sign-up {
     height: 3rem;
     padding: 0;
     border: none;
@@ -251,4 +242,8 @@ form .flex a:hover{
 
 .question a:hover{
     color: darkred;
+}
+
+.sign-up-image {
+    margin-top: 5rem;
 }
