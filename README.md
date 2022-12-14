@@ -1,3 +1,4 @@
+![HUMAN-2.png](https://github.com/zuri-training/Team-Humanw2/blob/c63ddd171dd218a8e93144d2fe6f24637da8485e/HUMAN-2.png)
 # Team-Humanw2
 
 <details><summary><h2>Table of Contents</h2></summary>
