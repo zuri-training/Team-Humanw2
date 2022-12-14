@@ -1,0 +1,19 @@
+{% extends 'ccgen/base.html' %}
+{% block content %}
+    <h1>Title:{{design.name }}</h1>
+
+    <p><image src="{{detail.file.url}}" height="60px" width="70px"></p>
+    <p><strong>Description:</strong>{{ design.description }}</p>
+    
+    {% if design.comment_set.all %}
+        {% for comment in design.comment_set.all %}
+        <p>{{comment}}</p>
+        {% endfor %}
+        {% else %}
+        <h1> No comments yet, be the first..</h1>
+        {% endif %}
+    
+    
+{% endblock %}
+
+    
