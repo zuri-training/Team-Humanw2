@@ -1,5 +1,4 @@
 from django.shortcuts import render
-<<<<<<< HEAD
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .forms import usersignupform
 from django.forms import ModelForm
@@ -18,6 +17,3 @@ class userCreateview(CreateView):
     def form_valid(self, form):
         user=User.objects.create_user(email=self.request.POST['email'], username=self.request.POST['username'], password=self.request.POST['password'], )
         return redirect('ccgen:index')
-=======
-
->>>>>>> khun
