@@ -2,55 +2,121 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="final-negative.css">
-    <title>Finale Negative</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fontawesome.com/icons/chevron-right?s=light&f=classic">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" type="text/css" href="FAQ.css">
+  <title>FAQs</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0px;
+      /* height: 300px; Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  </style>
+
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+  <div class="top">
+   
+
+    <ul class="nav justify-content-center">
+      <img src="images\Ellipse 1 (2).png" alt="" style="float: left; margin-right: 150px;" width="50px" >
+
+      <li class="nav-item" style="display: inline"><a href="#Home">Home</a></li>
+      <li class="nav-item" style="display:inline"><a href="#Cards">Cards</a></li>
+      <li class="nav-item" style="display:inline"><a href="#Benefits">Benefits</a></li>
+      <li class="nav-item" style="display:inline"><a href="#Testimonials">Testimonials</a></li>
+      <li class="nav-item" style="display:inline"><a href="#Contacts">Contacts</a></li>
 
 
+    <ul class="nav justify-content-end" >
+      <li class="nav-item" style="margin-left: 150px; display: inline;"><a href="#LOGIN">LOGIN </a></li>
+      <li class="nav-item" style=" display: inline;"><a href="#REGISTER">REGISTER </a></li>
+    </ul>
+
+  </ul>
+  </div>
 
 
-  </body>
-  </html>
+  <div class="container">
+    <div class="row">
+      <h5> Dashboard <img src="images\Vector (1).jpg" alt="" width="9px">
+        Contacts <img src="images\Vector (1).jpg" alt="" width="9px"> FAQs </h5>
+
+      <br><br>
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything you need to know about our product and billing. can't find <br>
+        The answer you're looking for? CONTACT US </p>
+
+      <div class="col-sm-8">
+        <p><b>Is there a free trial available?</b></p>
+
+        <p>Yes you can try us for free for 12 days
+          after subscribing.
+        </p>
+      </div>
+
+      <div class="col-sm-4">
+        <p><b>Can i change my plan later?</b></p>
+        <p>Of course, you can change your plan
+          later </p>
+
+      </div>
+
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-8">
+        <p><b>How long does it take to get a credit card ?</b></p>
+
+        <p>We offer instant approval for our credit cards,
+          once you've been approved for a credit card,
+          it should arrive within 48 hours.
+        </p>
+      </div>
+
+      <div class="col-sm-4">
+        <p><b>What do I do when I lose my credit card ?</b></p>
+        <p>If you lose your credit card, you can reach out to us to
+          report it lost or stolen. We will have your card
+          deactivated, and a new replacement card will be ordered. </p>
+        <button type="submit" form="form1" value="Submit">Get in touch</button>
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <br>
+
+</body>
+
+</html>

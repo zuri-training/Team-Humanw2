@@ -1,4 +1,4 @@
-# Team-Humanw2
+![HUMAN-2.png](https://github.com/zuri-training/Team-Humanw2/blob/c63ddd171dd218a8e93144d2fe6f24637da8485e/HUMAN-2.png)
 
 <details><summary><h2>Table of Contents</h2></summary>
 
@@ -11,7 +11,7 @@
 * [Collaboration Guide](#collaboration-guide)</details>
 
 ## Project Title
-cc-gen
+![WhatsApp Image 2022-12-13 at 2.33.15 PM.jpeg](https://github.com/zuri-training/Team-Humanw2/blob/main/WhatsApp%20Image%202022-12-13%20at%202.33.15%20PM.jpeg)
 
 ## Project Description
     A library of different types of credit card designs
@@ -96,3 +96,23 @@ For Team Humanw2 members, follow the following steps to collaborate:
 9. Then push your branch:<br/>
     `git push origin branchName` - This creates the branch remotely and pushes to that branch on the Github
 10. Go to Github and create a new pull request to the main branch. It will then be reviewed and merged into the master.
+
+## Authors
+
+- [Olamide Olaide](https://www.github.com/Olamideolaide) Team lead/Product Designer
+- [Waris Adebayo](https://www.github.com/wixda) Frontend Developer
+- [Chimebuka Anywanwu](https://www.github.com/chimebukanian) Backend Developer
+- [Kayode Folorunsho](https://www.github.com/DeyokaOfficial) Frontend Developer
+- [Stella Onyekwelu](https://www.github.com/StellaOnyekwelu) Product Designer
+- [Samuel Thomas](https://www.github.com/Sammex45) Frontend Developer
+- [Samuel Amure](https://github.com/Khun111) Fullstack Developer
+- [Jennifer Ugo-Francis](https://www.github.com/Adela9895) Product Designer
+- [Samuel Joseph](https://www.github.com/Skraboom) Product Designer
+- [Timilehin Adeyinka](https://www.github.com/Timilehin100) Product Designer
+- [Milly Cheptoo](https://www.github.com/Millie271) Product Designer
+- [Joy Akintunde]Product Designer
+- [Abisola Falomo](https://www.github.com/AbisolaHelen) Product Designer
+- [Oluwanifemi Ajibola](https://www.github.com/Toluwanifemi) Product Designer
+- [James Oluwatosin](https://www.github.com/Josvisuals) Product Designer
+- [Moronkeji Oluyide](https://www.github.com/Oludek) Product Designer
+- [Romanus Obizoba](https://www.github.com/Romanusik2) Product Designer
