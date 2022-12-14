@@ -1,0 +1,24 @@
+{% extends 'ccgen/base.html' %}
+{% block content %}
+{% load static %}
+    <h1>Designs list</h1>
+    {% if design_list %}
+        <ul>
+            {% for design in design_list %}
+                <li>
+                    <a href="{% url 'ccgen:design-detail' design.pk %}">{{ design.file }}<br>{{ design.name }}</a>
+                    <hr>
+                        <ul>
+                            <li><button style="border-radius: 5px; background-color:red;"><a style="text-decoration: none;" href="{% url 'ccgen:design-delete' design.pk %}">Delete {{design}}</a></button></li>
+                        </ul>
+             </li>
+            {% endfor %}
+        </ul>
+      <p><a href="{% url 'ccgen:design-create' %}">create another design</a></p> 
+  
+    {% else %}
+    <div>
+        <p>there are no designs in the library,<a href="{% url 'ccgen:design-create' %}">create design</a></p> 
+    </div>
+    {% endif %}
+{% endblock %}
