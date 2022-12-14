@@ -70,4 +70,3 @@ class savedfordownloadListView(LoginRequiredMixin, generic.ListView):
 class dashboard(generic.DetailView):
     model=User
     template_name='ccgen/dashboard.html'
->>>>>>> be07d8f487dd8d82b055bf673a9536e4a0966054
