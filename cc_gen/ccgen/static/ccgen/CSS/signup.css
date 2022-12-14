@@ -91,7 +91,7 @@ a {
 
 /* general styles ends here */
 
-/* main style starts here */
+/* main content style starts here */
 
 main {
     display: flex;
@@ -99,7 +99,7 @@ main {
     padding-bottom: 4rem;
 }
 
-.content {
+.main-content {
     height: 47;
     width: 31rem;
     display: flex;
@@ -107,6 +107,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    /* display: none; */
 }
 
 .head {
@@ -166,18 +167,51 @@ input:focus {
     border-bottom: 1px solid #000;
 }
 
+<<<<<<< HEAD:cc_gen/ccgen/static/ccgen/CSS/signup.css
 .sign-up {
+=======
+form .flex p {
+    color: #555;
+}
+
+<<<<<<< HEAD
+form .flex .forgot-btn {
+    color: red;
+    background: none;
+    border: none;
+=======
+form .flex .forgot-btn{
+    color: red;
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
+    cursor: pointer;
+}
+
+form .flex .forgot-btn:hover{
+    color: darkred;
+}
+
+.sign-in,
+.recover {
+>>>>>>> khun:Frontend/CSS/signIn.css
     height: 3rem;
     padding: 0;
     border: none;
 }
 
-.form-field input[type="submit"] {
+.form-field input[type="submit"],
+<<<<<<< HEAD
+.form-field button[type="submit"] {
+=======
+.form-field button[type="submit"],
+#open-email {
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
     height: 100%;
     width: 100%;
+    font-size: 16px;
     font-weight: 700;
     color: #FFF;
     background: var(--orange);
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -244,6 +278,75 @@ input:focus {
     color: darkred;
 }
 
+<<<<<<< HEAD:cc_gen/ccgen/static/ccgen/CSS/signup.css
 .sign-up-image {
     margin-top: 5rem;
+=======
+<<<<<<< HEAD
+/* forgot modal starts here */
+
+.forgot-modal {
+=======
+/* modal styles starts here */
+
+.forgot-modal,
+.login-verify-modal {
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
+    height: 47;
+    width: 31rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+<<<<<<< HEAD
+.forgot-modal .head{
+    padding-left: 0;
+}
+
+.forgot-modal .text-area p {
+=======
+.forgot-modal {
+    display: flex;
+}
+
+.forgot-modal .head,
+.login-verify-modal .head {
+    padding-left: 0;
+}
+
+.text-area p {
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+<<<<<<< HEAD
+=======
+.additional-text-area {
+    color: #444;
+    font-size: 15px;
+    word-spacing: -2px;
+    text-align: center;
+}
+
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
+.forgot-modal form {
+    gap: 2rem;
+}
+
+.hidden {
+    display: none;
+<<<<<<< HEAD
+=======
+}
+
+.login-verify .sign-in {
+    margin-top: 1.5rem;
+>>>>>>> ccffc4621495f1159bf2d85e8331919aca963d71
+>>>>>>> khun:Frontend/CSS/signIn.css
 }

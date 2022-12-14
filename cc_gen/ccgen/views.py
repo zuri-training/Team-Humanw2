@@ -1,4 +1,8 @@
+ 
 from django.urls import reverse_lazy
+=====
+from django.shortcuts import render
+ 
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http.response import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
@@ -24,6 +28,7 @@ class userCreateview(CreateView):
     def form_valid(self, form):
         user=User.objects.create_user(email=self.request.POST['email'], username=self.request.POST['username'], password=self.request.POST['password'], )
         return redirect('ccgen:index')
+ 
     
 class designListView(generic.ListView):
     model=Design
@@ -66,4 +71,3 @@ class savedfordownloadListView(LoginRequiredMixin, generic.ListView):
 class dashboard(generic.DetailView):
     model=User
     template_name='ccgen/dashboard.html'
-
