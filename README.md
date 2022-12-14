@@ -12,7 +12,7 @@
 * [Collaboration Guide](#collaboration-guide)</details>
 
 ## Project Title
-cc-gen
+![WhatsApp Image 2022-12-13 at 2.33.15 PM.jpeg](https://github.com/zuri-training/Team-Humanw2/blob/main/WhatsApp%20Image%202022-12-13%20at%202.33.15%20PM.jpeg)
 
 ## Project Description
     A library of different types of credit card designs
