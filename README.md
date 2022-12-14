@@ -105,7 +105,7 @@ For Team Humanw2 members, follow the following steps to collaborate:
 - [Kayode Folorunsho](https://www.github.com/DeyokaOfficial) Frontend Developer
 - [Stella Onyekwelu](https://www.github.com/StellaOnyekwelu) Product Designer
 - [Samuel Thomas](https://www.github.com/Sammex45) Frontend Developer
-- [Samuel Amure](https://github.com/Khun111)Fullstack Developer
+- [Samuel Amure](https://github.com/Khun111) Fullstack Developer
 - [Jennifer Ugo-Francis](https://www.github.com/Adela9895) Product Designer
 - [Samuel Joseph](https://www.github.com/Skraboom) Product Designer
 - [Timilehin Adeyinka](https://www.github.com/Timilehin100) Product Designer
