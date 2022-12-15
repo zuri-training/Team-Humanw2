@@ -6,8 +6,7 @@
         <ul>
             {% for design in design_list %}
             <li>
-<a href="{{ design.file.url}}" download>
-	      <img src=" {{design.file.url}}" alt="design" width="104" height="142"></a>
+<	      <img src=" {{design.file.url}}" alt="design" width="104" height="142">
                     <a href="{% url 'ccgen:design-detail' design.pk %}">{{ design.name }}</a>
                     <hr>
                         <ul>

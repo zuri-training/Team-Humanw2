@@ -44,8 +44,7 @@ class designDetailView(generic.DetailView):
 class designCreate(CreateView):
     model=Design
     form_class=designForm
-    successful_url=reverse_lazy('ccgen:index')
-
+    success_url=reverse_lazy('ccgen:designs')
 
 class designDelete(DeleteView):
     model=Design
