@@ -111,7 +111,7 @@ For Team Humanw2 members, follow the following steps to collaborate:
 - [Samuel Joseph](https://www.github.com/Skraboom) Product Designer
 - [Timilehin Adeyinka](https://www.github.com/Timilehin100) Product Designer
 - [Milly Cheptoo](https://www.github.com/Millie271) Product Designer
-- [Joy Akintunde]Product Designer
+- [Joy Akintunde](https://github.com/Joyakins) Product Designer
 - [Abisola Falomo](https://www.github.com/AbisolaHelen) Product Designer
 - [Oluwanifemi Ajibola](https://www.github.com/Toluwanifemi) Product Designer
 - [James Oluwatosin](https://www.github.com/Josvisuals) Product Designer
