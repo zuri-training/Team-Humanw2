@@ -20,7 +20,6 @@
 * [Product Documentation](https://docs.google.com/document/d/15_CW3yIrWMxepYVp_7WHOLzd5md7q2thjMBgyGg_PrE/edit?usp=sharing)
 * [Figma](https://www.figma.com/file/vHvm0LLeEOO2wDEw9tMcG7/Team-Humanw2-CC_gen?node-id=0%3A1&t=z3IEJkfp8tAnV9JV-1)
 * [Database Schema](https://docs.google.com/document/d/1--K5aBYXsp6UJa1XExZXTXfEoX88vy-1qgG5XFVOfLM/edit?usp=sharing)
-* [View detailed README file](https://github.com/zuri-training/Team-Humanw2/blob/main/README.md)
 * [View Project’s Live Link](http://teamhuman.pythonanywhere.com/)
 ## Usage: install python, and django
 ```sh
