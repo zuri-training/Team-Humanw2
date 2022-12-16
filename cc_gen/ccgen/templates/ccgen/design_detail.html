@@ -1,8 +1,11 @@
 {% extends 'ccgen/base.html' %}
 {% block content %}
     <h1>Title:{{design.name }}</h1>
-
-    <p><image src="{{detail.file.url}}" height="60px" width="70px"></p>
+    
+    <p><a href="{{ design.file.url}}" download>
+        <img src=" {{design.file.url}}" alt="design not an image" width="104" height="142">
+      </a> 
+            </p>
     <p><strong>Description:</strong>{{ design.description }}</p>
     
     {% if design.comment_set.all %}
