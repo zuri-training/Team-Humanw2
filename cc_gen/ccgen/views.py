@@ -1,4 +1,4 @@
- 
+from django.http import JsonResponse 
 from django.urls import reverse_lazy
 from django.shortcuts import render
  
@@ -18,6 +18,15 @@ from django.contrib.auth.models import User
 
 def index(request):
     return render(request, 'ccgen/index.html')
+
+def update_download_field(request):
+    if request.method == 'POST':
+        download = get_object_or_404(Design, pk=request.POST['id'])
+        download.downloaded = True
+        download.save()
+        return JsonResponse({'success': True})
+    else:
+        return JsonResponse({'success': False})
 
 
 class userCreateview(CreateView):

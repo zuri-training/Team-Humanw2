@@ -17,3 +17,18 @@ forgotPasswordForm.addEventListener('submit', () => {
     forgotPasswordModal.style.display = "none";
     showUserEmail;
 })
+
+fetch('/update-download-field/', {
+    method: 'POST',
+    body: JSON.stringify({
+      'id': {{ design.id }},
+    }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }).then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    // Do something with the response data here, if necessary
+  });
+  

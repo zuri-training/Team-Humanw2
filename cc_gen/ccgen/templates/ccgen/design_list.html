@@ -7,13 +7,16 @@
             {% for design in design_list %}
             <li>
 <a href="{{ design.file.url}}" download>
-	      <img src=" {{design.file.url}}" alt="design" width="104" height="142"></a>
+	      <img src=" {{design.file.url}}" alt="design not an image" width="104" height="142">
+        </a> 
                     <a href="{% url 'ccgen:design-detail' design.pk %}">{{ design.name }}</a>
-                    <hr>
+                    <b>{{ design.download.downloaded }}</b>
                         <ul>
                             <li><button style="border-radius: 5px; background-color:red;"><a style="text-decoration: none;" href="{% url 'ccgen:design-delete' design.pk %}">Delete {{design}}</a></button></li>
                         </ul>
              </li>
+             <hr>
+
             {% endfor %}
         </ul>
       <p><a href="{% url 'ccgen:design-create' %}">create another design</a></p> 
