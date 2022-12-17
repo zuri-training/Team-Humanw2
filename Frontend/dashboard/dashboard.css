@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+/* nav section */
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    padding: 1.5rem;
+    min-height: 10vh;
+}
+
+.main-head {
+    background-color: #fff;
+
+}
+
+#logo {
+    flex: 1 1 4rem;
+}
+
+.nav-icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+
+}
+
+.search-nav {
+    flex: 1 1 50rem;
+    /* margin-right:3rem; */
+
+
+}
+
+.uba-nav {
+    flex: 1 1 4rem;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input {
+    min-width: 50rem;
+    border: 0;
+    padding: 0.52rem;
+    border-radius: 0.8rem;
+    background: transparent;
+    outline: none;
+    color: #cac7ff
+}
+
+
+.search-tab {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+width: 40vw;
+    border-radius: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search-tab button {
+    border: 0;
+    margin-top: 0.9rem;
+    margin-left: 0.9rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+::placeholder {
+    color: #cac7ff
+}
+
+.browse-library {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+
+}
+
+.browse-library img {
+    width: 8rem;
+
+}
+
+.main-section {
+    display: flex;
+    width: 86.2%;
+    margin: 4rem auto;
+}
+
+.two-cards {
+    display: flex;
+    /* margin-top: 15rem; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+
+}
+
+.credit-cards {
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./Credit\ card\ 3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60rem;
+
+}
+
+.credit-cards h4 {
+    font-size: 1.15rem;
+    color: #F79F1A;
+
+}
+
+.credit-cards p {
+    font-size: 1.1rem;
+}
+
+
+
+.recommended button {
+    border: 0;
+    outline: none;
+    background-color: #F79F1A;
+    padding: 1rem 1.4rem;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+.recommended {
+    padding-left: 8rem;
+    display: flex;
+    width: 90vw;
+    padding-top: 4rem;
+    justify-content: space-around;
+
+}
+
+/* recommended */
+
+.orange {
+    display: flex;
+    padding-left: 7rem;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-around;
+    width: 90vw;
+
+
+}
+
+.orange-text {
+    text-align: center;
+}
+
+.orange-text h2,
+p,
+button {
+    padding-bottom: 1rem;
+}
+
+.icon {
+    padding-top: 1rem;
+}
+
+.star {
+    padding-top: 1rem;
+}
+
+.orange-text button {
+    border: 0;
+    outline: none;
+    background-color: #F79F1A;
+    padding: 1rem 1.4rem;
+    border-radius: 0.5rem;
+    color: #fff;
+
+}
+
+.cardsmiddle {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+}
+
+.middle_imgdiv {
+    padding-right: 3rem;
+}
+
+.middle_img {
+    width: 30vw;
+    padding-bottom: 3rem;
+
+}
+
+.categories {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 16.3rem;
+    background-image: url("./Credit\ card\ 3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60rem;
+
+}
+.transparent-card{
+    background-image: url("./Credit\ card\ 3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60rem;
+
+}
+
+.cards_h1 {
+    padding-left: 28.6vw;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin: 1rem 1rem;
+
+}
+
+.cards_img {
+    width: 30vw;
+    padding-bottom: 3rem;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    width: 74%;
+    margin: auto;
+    color: #fff;
+}
+
+.footer-icon{
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 62vh;
+    background-color: #523509;
+    margin-top: 10rem;
+    padding-top: 4rem;
+    padding-bottom:1rem;
+}
+
+footer div h3 {
+    font-size: 2.3rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+}
+
+footer div p {
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.footer-middle {
+    display: flex;
+    flex: 1 1 40rem;
+    gap: 14rem;
+    padding-bottom: 5rem;
+
+}
+
+.team-human {
+    flex: 1 1 8rem;
+}
+.logout{
+    padding-left: 2.5rem;
+}
