@@ -18,17 +18,19 @@ forgotPasswordForm.addEventListener('submit', () => {
     showUserEmail;
 })
 
+function downloaded(){
+  let design_id=document.getElementById("designid").value
 fetch('/update-download-field/', {
     method: 'POST',
-    body: JSON.stringify({
-      'id': {{ design.id }},
-    }),
+    body: JSON.stringify({'id': design_id}),
     headers: {
       'Content-Type': 'application/json'
-    }
-  }).then(function(response) {
+      }
+  }
+)
+    .then(function(response) {
     return response.json();
   }).then(function(data) {
     // Do something with the response data here, if necessary
   });
-  
+}

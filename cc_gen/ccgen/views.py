@@ -21,9 +21,10 @@ def index(request):
 
 def update_download_field(request):
     if request.method == 'POST':
-        download = get_object_or_404(Design, pk=request.POST['id'])
-        download.downloaded = True
-        download.save()
+        design = get_object_or_404(Design, pk=request.POST['id'])
+        user_download=design.download_set.create(user=request.user) 
+        user_download.download= True
+        user_download.save()
         return JsonResponse({'success': True})
     else:
         return JsonResponse({'success': False})
