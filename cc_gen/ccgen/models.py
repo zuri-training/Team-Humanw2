@@ -22,4 +22,4 @@ class Download(models.Model):
     design=models.ForeignKey(Design, on_delete=models.CASCADE)
     downloaded=models.BooleanField(default=False)
     def __str__(self):
-        return self.id
+        return str(self.id)

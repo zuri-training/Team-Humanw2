@@ -1,0 +1,215 @@
+{% extends 'ccgen/base.html' %}
+
+{% block title %}Home{% endblock %}
+{% load static %}
+{%  block content %}               
+        <!-- creating the write ups and image after the navigation menu -->
+        <div class="row">
+            <div class="col">
+                <h1>Unique Credit Cards Just For You.</h1>
+                <p>Have a specific card in mind? Find it by search!</p>
+                <button>search now</button>
+            </div>
+            <div class="col">
+                <img src="{% static 'ccgen/images/transparentcard.png' %}" alt="Cards design">
+            </div>
+        </div>
+
+
+
+        <!-- Browse our card categories -->
+        <div class="section_two">
+            <h2>Browse our card categories</h2>
+            <div class="card">
+                <div class="box1">
+                    <a href="{% url 'ccgen:usersignup' %}"><h5>Best Cards</h5></a>
+                </div>
+                <div class="box2">
+                    <a href="{% url 'ccgen:usersignup' %}"><h5>Custom Cards</h5></a>
+                </div>
+                <div class="box3">
+                    <a href="{% url 'ccgen:usersignup' %}"><h5>Trending Cards</h5></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box1">
+                    <a href="{% url 'ccgen:usersignup' %}"><h5>Demo Cards</h5></a>
+                </div>
+                <div class="box2">
+                    <a href="{% url 'ccgen:usersignup' %}"><h5>Virtual Cards</h5></a>
+                </div>
+                <div class="box3">
+                    <a href="{% url 'ccgen:usersignup' %}"><h5>Physical Cards</h5></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- customize your cards section -->
+        <section class="card1" id="Cards">
+            <div class="card_design">
+                <div class="card_text">
+                    <h5>Customize your credit card</h5>
+                    <p>Create unique designs to suit your personal
+                        specifications.
+                    </p>
+                    <a href="{% url 'ccgen:usersignup' %}"><button class="btn" type="button">Get
+                            started <span>Go
+                                Premium</span></button></a>
+                </div>
+
+                <img src="{% static 'ccgen/images/card1.png' %}" alt="Card">
+
+
+            </div>
+        </section>
+
+        <section class="card2">
+            <div class="card_design">
+                <img src="{% static 'ccgen/images/card2.png' %}" alt="Card">
+
+                <div class="card_text">
+                    <h5>Download the best credit card design</h5>
+                    <p>Our team of experts uses a methodology to identify the
+                        best credit card designs most likely to fit your needs.
+                    </p>
+                    <a href="{% url 'ccgen:usersignup' %}"><button type="button">Download</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- benefits section -->
+
+        <section class="Benefits" id="Benefits">
+            <div class="benefits1">
+                <h3>Benefits</h3>
+                <p> <strong>Full access to the save and download the
+                        best credit card
+                        designs when you register.</strong>
+                </p>
+                <p><strong>Our Premium members have access to glassmorphism
+                        credit card
+                        designs which is simply designed for luxury and
+                        high-class
+                        personalities with exclusive perks and upgrades. Are you
+                        already a registered user? Upgrade to access our premium
+                        designs.</strong>
+                </p>
+            </div>
+            <div id="verticle-line"></div>
+            <div class="benefits2">
+                <p><strong>Registered users have access to view over 1,000,000
+                        million
+                        credit card designs, save and download.</strong>
+                </p>
+                <p><strong>Having a credit card uniquely designed for you, which
+                        would
+                        most likely fit your needs. That is, a personalized
+                        credit
+                        card design can be customized according to your
+                        specifications.</strong>
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Testimonial section -->
+        <div id="testimonials">
+            <h2>Testimonials</h2>
+        </div>
+        <section class="testimonial">
+
+            <div class="container_text">
+                <img src="{% static 'ccgen/images/Image.png' %}" alt="images">
+                <h4>Hassam Abdul</h4>
+                <p>The designs you find here are uniquely created to suit ones
+                    needs. I find them really cool and excellent!</p>
+            </div>
+
+            <div class="container_text">
+                <img src="{% static 'ccgen/images/Image (1).png' %}" alt="images">
+                <h4>Sophia Ibu</h4>
+                <p>As a young sophicated lady, i like that my credit card speaks
+                    about my personality and i’m glad to find them here. </p>
+            </div>
+
+            <div class="container_text" id="Helen">
+                <img src="{% static 'ccgen/images/Image (2).png' %}" alt="{% static 'images">
+                <h4>George Helen</h4>
+                <p>As a bank manager, customers are very pleased with the look
+                    of their credit cards. The designs are really beautiful and
+                    the quality is amazing.</p>
+            </div>
+
+            <div class="container_text">
+                <img src="{% static 'ccgen/images/Image (3).png' %}" alt="images">
+                <h4>Mattew Lloyd</h4>
+                <p>As a premium user, I enjoy the exclusive perks and upgrades
+                    available for premium subscribers. It fits my needs.</p>
+            </div>
+
+        </section>
+
+
+        <!-- About us section -->
+        <section class="about_us" id="About">
+            <h4>About Us</h4>
+            <p>Humanw2 cc_gen is a platform where different
+                credit cards designs can be accessed. A credit
+                card library created
+                to provide users with access to view various
+                kinds of credit card
+                designs, interact, save and download designs.</p>
+        </section>
+
+        <!-- Join our mailing list section -->
+        <section class="mailing_list">
+            <div> <h4>JOIN OUR MAILING LIST</h4></div>
+            <div class="form_list">
+                <form action=""></form>
+                <input type="text" placeholder="NAME" required>
+                <input type="email" placeholder="EMAIL"
+                    required>
+            </div>
+            <button type="submit">SUBMIT</button>
+
+        </section>
+
+        <footer class="footer">
+            <div class="HumanW2">
+                <h3>TEAM HUMANW1</h3>
+                <H3>NIGERIA</H3>
+            </div>
+            <div class="column1">
+                <h3>Partner with us</h3>
+                <H3>Vision</H3>
+                <h3>Donate</h3>
+                <H3>Policies</H3>
+            </div>
+            <div class="column1">
+                <h3>Resources</h3>
+                <H3>Library</H3>
+                <h3>Designers</h3>
+                <H3>Blogs</H3>
+            </div>
+            <div class="column1">
+                <h3>Support</h3>
+                <H3><a href="#About">About us</a></H3>
+                <h3><a href="./contact.html">Contact
+                        us</a></h3>
+                <a href="../Frontend/payment-screens/FAQ.html"><H3>FAQs</H3></a>
+            </div>
+
+        </footer>
+
+        <div class="social_icons">
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands
+                    fa-square-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands
+                    fa-square-twitter"></i></a>
+            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+{% endblock %}
+        

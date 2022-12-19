@@ -19,12 +19,15 @@ from django.contrib.auth.models import User
 def index(request):
     return render(request, 'ccgen/index.html')
 
-def update_download_field(request):
+def update_download_field(request,pk):
     if request.method == 'POST':
-        design = get_object_or_404(Design, pk=request.POST['id'])
-        user_download=design.download_set.create(user=request.user) 
-        user_download.download= True
-        user_download.save()
+        design = get_object_or_404(Design, pk=pk)
+        try:
+         download=design.download_set.get(user=request.user)
+        except Download.DoesNotExist:
+            user_download=design.download_set.create(user=request.user, downloaded=True, design=design) 
+            user_download.download= True
+            user_download.save()
         return JsonResponse({'success': True})
     else:
         return JsonResponse({'success': False})

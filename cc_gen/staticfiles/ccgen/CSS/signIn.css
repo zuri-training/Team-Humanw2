@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --orange: #F79F1A;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* header style starts here */
+
+header {
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+#logo{
+    width: 100px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 .5rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+nav li a:hover {
+    color: #D18131;
+}
+
+.cta {
+    display: flex;
+    gap: 16px;
+}
+
+.cta button {
+    font-size: 16px;
+    font-weight: 500;
+    background: none;
+    text-align: center;
+    padding: 10px 20px;
+    color: var(--orange);
+    line-height: 19px;
+    border: 1px solid #F8AF40;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button.login:hover {
+    background: var(--orange);
+    color: #FFF;
+}
+
+button.register {
+    background-color: var(--orange);
+    color: #FFF;
+}
+
+button.register:hover {
+    background: none;
+    color: var(--orange);
+}
+
+/* header style ends here */
+
+/* general styles starts here */
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* general styles ends here */
+
+/* main content style starts here */
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+
+.main-content {
+    height: 47;
+    width: 31rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    /* display: none; */
+}
+
+.head {
+    height: 3.5rem;
+    width: 31rem;
+    padding-left: 25%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 1px 2.5px lightgray;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.2rem 0;
+}
+
+.head button {
+    margin-right: -2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.form-field {
+    height: 3.2rem;
+    width: 26rem;
+    padding: .4rem 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.form-field label {
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: block;
+}
+
+.form-field input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.form-field input:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+form .flex p {
+    color: #555;
+}
+
+form .flex .forgot-btn{
+    color: red;
+    cursor: pointer;
+}
+
+form .flex .forgot-btn:hover{
+    color: darkred;
+}
+
+.sign-in,
+.recover {
+    height: 3rem;
+    padding: 0;
+    border: none;
+}
+
+.form-field input[type="submit"],
+.form-field button[type="submit"],
+#open-email {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    background: var(--orange);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.break {
+    width: 26rem;
+}
+
+.break p {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+}
+  
+.break p:before {
+    content:" ";
+    height: 2px;
+    width: 40%;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+  
+.break p:after {
+    content:" ";
+    height: 2px;
+    width: 40%;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.social-field {
+    height: 3rem;
+    width: 26rem;
+    padding: .5rem 1rem;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.social-field a {
+    color: #000;
+    font-weight: bold;
+}
+
+.question a{
+    color: red;
+}
+
+.question a:hover{
+    color: darkred;
+}
+
+/* modal styles starts here */
+
+.forgot-modal,
+.login-verify-modal {
+    height: 47;
+    width: 31rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.forgot-modal {
+    display: flex;
+}
+
+.forgot-modal .head,
+.login-verify-modal .head {
+    padding-left: 0;
+}
+
+.text-area p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.additional-text-area {
+    color: #444;
+    font-size: 15px;
+    word-spacing: -2px;
+    text-align: center;
+}
+
+.forgot-modal form {
+    gap: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.login-verify .sign-in {
+    margin-top: 1.5rem;
+}
