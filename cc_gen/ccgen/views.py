@@ -49,9 +49,8 @@ class designListView(generic.ListView):
     def get_queryset(self):
         return Design.objects.all()
 
-class commentview(CreateView):
+class commentCreateView(CreateView):
     model=Comment
-    fields='__all__'
     success_url=reverse_lazy('ccgen:designs')
 
     def form_valid(self, form):
