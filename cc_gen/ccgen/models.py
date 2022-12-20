@@ -20,6 +20,9 @@ class Comment(models.Model):
 class Download(models.Model):
     user=models.ForeignKey(User, on_delete=models.CASCADE)
     design=models.ForeignKey(Design, on_delete=models.CASCADE)
-    downloaded=models.BooleanField(default=False)
+    DOWNLOAD_STATUS=(('d', 'Downloaded'), ('u', 'Undownload'), ('s', 'Saved'))
+    downloaded=models.CharField(max_length=1, choices=DOWNLOAD_STATUS, default='u', help_text='Downloaded?')
+    time_of_download=models.DateTimeField(auto_now_add=True, null=True)
+    
     def __str__(self):
         return str(self.id)

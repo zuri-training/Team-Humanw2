@@ -10,7 +10,7 @@ from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required, permission_required
 from django.urls import reverse
-from .forms import  usersignupform, designForm
+from .forms import  usersignupform, designForm, commentForm
 import datetime
 from django.contrib.auth.models import User
 # Create your views here.
@@ -25,8 +25,7 @@ def update_download_field(request,pk):
         try:
          download=design.download_set.get(user=request.user)
         except Download.DoesNotExist:
-            user_download=design.download_set.create(user=request.user, downloaded=True, design=design) 
-            user_download.download= True
+            user_download=design.download_set.create(user=request.user, downloaded='u', design=design) 
             user_download.save()
         return JsonResponse({'success': True})
     else:
@@ -50,9 +49,27 @@ class designListView(generic.ListView):
     def get_queryset(self):
         return Design.objects.all()
 
+class commentview(CreateView):
+    model=Comment
+    fields='__all__'
+    success_url=reverse_lazy('ccgen:designs')
+
+    def form_valid(self, form):
+            new_comment = form.save(commit=False)
+            new_comment.design=self.get_object()
+            return super(designDetailView, self).form_valid(form)
+
 class designDetailView(generic.DetailView):
     model=Design
     template_name='ccgen/design_detail.html'
+    context_object_name='design'
+    
+    def get_context_data(self, args, **kwargs):
+        context=super().get_context_data(*args, **kwargs)
+        context['comment_form']=self.commentForm(self.reqeust.POST or None)
+        return context
+
+        
 
 class designCreate(CreateView):
     model=Design
@@ -69,7 +86,9 @@ class downloadedListView(LoginRequiredMixin, generic.ListView):
     template_name='ccgen/downloaded_list.html'
     
     def get_queryset(self):
-        return Download.objects.filter(user=self.request.user).filter(downloaded=True)
+        return Download.objects.filter(user=self.request.user)
+
+    
 
 class savedfordownloadListView(LoginRequiredMixin, generic.ListView):
     model=Download
@@ -77,7 +96,7 @@ class savedfordownloadListView(LoginRequiredMixin, generic.ListView):
     template_name='ccgen/saved_list.html'
     
     def get_queryset(self):
-        return Download.objects.filter(user=self.request.user).filter(downloaded=False)
+        return Download.objects.filter(user=self.request.user).filter(downloaded='s')
 
 class dashboard(generic.DetailView):
     model=User

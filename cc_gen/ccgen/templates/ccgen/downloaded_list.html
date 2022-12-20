@@ -1,22 +1,25 @@
 {% extends 'ccgen/base.html' %}
 {% block content %}
-    <h1>Designs list</h1>
+{%load static%}
     {% if download_list %}
+        <h1>my downloads</h1>
+
         <ul>
-            {% for design in donwload_list %}
+            {% for download in download_list %}
                 <li>
-                    <a href="{% url 'ccgen:design-detail' design.pk %}">{{ design.file.url }}<br>{{ design.name }}</a>
-                    <hr>
-                        <ul>
-                            <li><button style="border-radius: 5px; background-color:red;"><a style="text-decoration: none;" href="{% url 'ccgen:design-delete' design.pk %}">Delete {{design}}</a></button></li>
-                        </ul>
-             </li>
+                    <a href="{% url 'ccgen:design-detail' download.design.pk %}">
+                            <img src=" {{download.design.file.url}}" alt="design not an image" width="104" height="142">
+                          <br> 
+                        {{ download.design.name }}
+                    </a><br>
+                    <span>time of downwload: {{download.time}}</span>
+                </li>
+                <hr>
             {% endfor %}
         </ul>
-      <p><a href="{% url 'ccgen:design-create' %}">create another design</a></p> 
   
     {% else %}
-        <p>there are no downloads by you></p> 
+        <p>there are no downloads by you</p> 
     </p>
     {% endif %}
 {% endblock %}
