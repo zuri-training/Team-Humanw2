@@ -34,7 +34,7 @@ def update_download_field(request,pk):
 
 class userCreateview(CreateView):
     form_class=usersignupform
-    template_name='ccgen/signup.html'
+    template_name='ccgen/usersignup.html'
 
     def form_valid(self, form):
         user=User.objects.create_user(email=self.request.POST['email'], username=self.request.POST['username'], password=self.request.POST['password'], )
@@ -50,7 +50,7 @@ class designListView(generic.ListView):
         return Design.objects.all()
 
 class commentCreateView(CreateView):
-    model=Comment
+    model=Design
     success_url=reverse_lazy('ccgen:designs')
 
     def form_valid(self, form):

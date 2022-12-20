@@ -45,7 +45,7 @@ fetch(url, {
     // Do something with the response data here, if necessary
     if (data.success=true){
       console.log(true);
-      document.getElementById("download-"+ design).innerHTML="Downloaded";
+      document.getElementById("download-"+ design).innerHTML="Downloaded✅";
     }
 
 
