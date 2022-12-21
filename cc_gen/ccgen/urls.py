@@ -11,7 +11,8 @@ urlpatterns=[
     path('design/<int:pk>/delete/', views.designDelete.as_view(), name='design-delete'),   
     path('downloads/', views.downloadedListView.as_view(), name='downloads'),
     path('saveddownloads/', views.savedfordownloadListView.as_view(), name='saved'),
-    path('update-download-field/', views.update_download_field, name='update-download-field'),
-
+    path('update-download-field/<int:pk>', views.update_download_field, name='update-download-field'),
+    path('comment/create/', views.commentCreateView.as_view(),name='comment-create'),
+    
     path('signup/', views.userCreateview.as_view(), name='usersignup'),
 ]

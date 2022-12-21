@@ -6,18 +6,28 @@
         <ul>
             {% for design in design_list %}
             <li>
-<a href="{{ design.file.url}}" download>
-	      <img src=" {{design.file.url}}" alt="design not an image" width="104" height="142">
-        </a> 
-                    <a href="{% url 'ccgen:design-detail' design.pk %}">{{ design.name }}</a>
-                    <b>{{ design.download.downloaded }}</b>
-                        <ul>
-                            <li><button style="border-radius: 5px; background-color:red;"><a style="text-decoration: none;" href="{% url 'ccgen:design-delete' design.pk %}">Delete {{design}}</a></button></li>
-                        </ul>
+                <a href="{{ design.file.url}}" onClick="downloaded('{{design}}')" download>
+	                <img src=" {{design.file.url}}" alt="design not an image" width="104" height="142"><br>
+                    <span>click to download</span><br>
+                </a> 
+                <span id="designid-{{design}}">{{design.id}}</span><br>
+                <span id="url-{{design}}">{% url 'ccgen:update-download-field' design.id %}</span><br>
+                <a href="{% url 'ccgen:design-detail' design.id %}">{{ design.name }}</a>
+                
+                {% if design.download_set.all %}
+                    {% for copy in design.download_set.all %}
+                        {% if copy.user == user %}
+                            <code id="download-{{design}}">Downloaded✅</code>
+                        {%endif%}
+                    {%endfor%}
+                {%endif%}
+                <ul>
+                    <li><button style="border-radius: 5px; background-color:red;"><a style="text-decoration: none;" href="{% url 'ccgen:design-delete' design.id %}">Delete {{design}}</a></button></li>
+                </ul>
              </li>
              <hr>
-
             {% endfor %}
+
         </ul>
       <p><a href="{% url 'ccgen:design-create' %}">create another design</a></p> 
   
