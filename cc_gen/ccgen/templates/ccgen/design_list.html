@@ -1,23 +1,32 @@
 {% extends 'ccgen/base.html' %}
 {% block content %}
-{% load static %}
     <h1>Designs list</h1>
     {% if design_list %}
         <ul>
             {% for design in design_list %}
             <li>
+                <span style="display:none;" id="designid-{{design}}">{{design.id}}</span><br>
+                <span style="display:none;" id="url-{{design}}">{% url 'ccgen:update-download-field' design.id %}</span><br>
+                <span style="display:none;" id="save-url-{{design}}">{% url 'ccgen:update-download-saved' design.id %}</span><br>
+
                 <a href="{{ design.file.url}}" onClick="downloaded('{{design}}')" download>
 	                <img src=" {{design.file.url}}" alt="design not an image" width="104" height="142"><br>
                     <span>click to download</span><br>
                 </a> 
-                <span id="designid-{{design}}">{{design.id}}</span><br>
-                <span id="url-{{design}}">{% url 'ccgen:update-download-field' design.id %}</span><br>
-                <a href="{% url 'ccgen:design-detail' design.id %}">{{ design.name }}</a>
+                <a href="{% url 'ccgen:design-detail' design.id %}"><b>{{ design.name }}</b></a>
+
                 
+                <button onClick="save_download('{{design}}')">save for later download</button><br>
                 {% if design.download_set.all %}
                     {% for copy in design.download_set.all %}
                         {% if copy.user == user %}
-                            <code id="download-{{design}}">Downloaded✅</code>
+                            {% if copy.downloaded == 'd' %}
+                                <code id="download-{{design}}">Downloaded✅</code>
+                            {% elif copy.downloaded == 's' %}
+                                    <code id="download-{{design}}">saved for download✅</code>
+
+                            {%endif%}
+                            
                         {%endif%}
                     {%endfor%}
                 {%endif%}

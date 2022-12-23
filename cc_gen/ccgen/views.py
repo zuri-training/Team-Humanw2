@@ -25,12 +25,26 @@ def update_download_field(request,pk):
         try:
          download=design.download_set.get(user=request.user)
         except Download.DoesNotExist:
-            user_download=design.download_set.create(user=request.user, downloaded='u', design=design) 
+            user_download=design.download_set.create(user=request.user, downloaded='d', design=design) 
             user_download.save()
+        else:
+            download.design='d'
         return JsonResponse({'success': True})
     else:
         return JsonResponse({'success': False})
 
+def update_download_saved(request,pk):
+    if request.method == 'POST':
+        design = get_object_or_404(Design, pk=pk)
+        try:
+            download=design.download_set.get(user=request.user)
+
+        except Download.DoesNotExist:
+            user_download=design.download_set.create(user=request.user, downloaded='s', design=design) 
+            user_download.save()
+        return JsonResponse({'success': True})
+    else:
+        return JsonResponse({'success': False})
 
 class userCreateview(CreateView):
     form_class=usersignupform
@@ -85,7 +99,7 @@ class downloadedListView(LoginRequiredMixin, generic.ListView):
     template_name='ccgen/downloaded_list.html'
     
     def get_queryset(self):
-        return Download.objects.filter(user=self.request.user)
+        return Download.objects.filter(user=self.request.user).filter(downloaded='d')
 
     
 

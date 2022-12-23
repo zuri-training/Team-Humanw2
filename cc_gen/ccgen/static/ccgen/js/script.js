@@ -52,6 +52,40 @@ fetch(url, {
   });
 }
 
+function save_download(design){
+  let designid=document.getElementById("designid-"+ design)
+  let design_id=designid.innerHTML;
+  designid.style.display="none";
+
+  let url1=document.getElementById("save-url-"+ design)
+  let url=url1.innerHTML;
+  url1.style.display="none";
+  console.log(document.getElementById("download-"+ design))
+fetch(url, {
+    method: 'POST',
+    credentials: "same-origin",
+    headers: {
+      "X-CSRFToken": getCookie("csrftoken"),
+      "Accept": "application/json",
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({'id': design_id}),
+  
+  }
+)
+    .then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    // Do something with the response data here, if necessary
+    if (data.success=true){
+      console.log(true);
+      document.getElementById("download-"+ design).innerHTML="saved for later download✅";
+    }
+
+
+  });
+}
+
 function getCookie(name) {
     var cookieValue = null;
     if (document.cookie && document.cookie !== '') {
